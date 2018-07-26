@@ -44,3 +44,11 @@ Install ELK Stack in terminal.
 ```
 $ brew install filebeat logstash elasticsearch kibana
 ```
+
+Terminal 1:
+
+Turn file beat on. Pointing to .yml config file.
+
+```
+filebeat -e -path.config=. -c /Users/stev/Documents/GitHub/how-to-ethereum-classic/how-to-elk-stack/config-files/filebeat.geth.mlog.json.yml -d "publish"
+```
