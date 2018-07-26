@@ -7,3 +7,32 @@ filebeat.prospectors:
   json.keys_under_root: true
 output.logstash:
   hosts: ["localhost:5043"]
+
+# filebeat.prospectors:
+# - input_type: log
+#   paths:
+#     - /Users/stev/Library/EthereumClassic/mainnet/mlogs/geth*
+#   symlinks: true
+#   exclude_files: ['\.gz$']
+#   json.message_key: event
+#   json.keys_under_root: true
+# output.logstash:
+#   # hosts: ["192.168.99.100:5000"]
+#   hosts: ["71.201.214.119:5043"]
+#   # ssl.certificate: "/usr/local/etc/filebeat/etcdevmon.logstash.crt"
+#   # ssl.key: "/usr/local/etc/filebeat/etcdevmon.logstash.key"
+#   # This is will set the index prefix for elasticsearch indices. Important when
+#   # aggregating logs from multiple machines and instances.
+#   index: "etcdev-v1"
+#   # use tags instead of setting fields. they seem to be pretty similar
+#   tags: ["mainnet", "isaac", "osx"]
+#   # only send up recent stuff to keep things lightweight (until i figure out
+#   # rotation)
+#   ignore_older: "5h"
+#   # registry maintenance
+#   close_inactive: "4h"
+#   close_renamed: true
+#   clean_inactive: true
+#   clean_removed: true
+#   # start reading at bottom, not top
+#   tail_files: true
