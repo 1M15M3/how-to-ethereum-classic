@@ -32,9 +32,15 @@ Homebrew/homebrew-core (git revision b87a; last commit 2018-07-25)
 
 #### ELK Stack
 
-Elastic's (Filebeat):
+[Elastic's](https://www.elastic.co/) (Filebeat) -
 **E**lasticsearch
 **L**ogstash
 **K**ibana (ELK)
 
 ![**](https://img.etsystatic.com/il/782712/1452353281/il_570xN.1452353281_7ter.jpg?version=0)
+
+Install ELK Stack in terminal.
+
+```
+$ brew install filebeat logstash elasticsearch kibana
+```
