@@ -1,4 +1,7 @@
 # How to Setup an Ethereum Classic Node | macOS
+![node](https://github.com/ETCDEVTeam/emerald-svg-icons/raw/master/icons/currency_etc.svg?sanitize=true =10)
+
+< input summary >
 
 # Prerequisites
 
