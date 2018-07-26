@@ -4,7 +4,7 @@
 
 *Double check project websites for latest installation instructions*
 
-##### Homebrew
+#### Homebrew
 
 [Homebrew](https://brew.sh/) - package manager for macOS
 
@@ -12,7 +12,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-##### Go lang. and a C compilar (xcode)
+#### Go lang. and a C compilar (xcode)
 
 Easily install Go Programming Language by downloading a binary distribution at the [Go Lang.](https://golang.org/) website.
 
