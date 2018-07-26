@@ -39,14 +39,14 @@ go version go1.10.3 darwin/amd64
 Install xcode.
 
 ```
-xcode-select --install
+$ xcode-select --install
 ```
 
 # Install
 
 Install Classic Geth using Homebrew
 ```
-brew install ethereumproject/classic/geth
+$ brew install ethereumproject/classic/geth
 ```
 Example of the output:
 ```
