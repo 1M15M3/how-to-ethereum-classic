@@ -13,7 +13,7 @@
 [Homebrew](https://brew.sh/) - package manager for macOS
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 Simply follow through installation in terminal.
 
@@ -99,3 +99,13 @@ $ geth
 ```
 $ geth --fast --cache=1024
 ```
+
+Running Classic Geth downloads and syncs the entire Ethereum Classic blockchain. Geth returns the sync status. E.g.:
+
+```
+2018-07-25 22:51:36 Sync       #151305 of  #6031258 36529b08   638/ 517/12 blk/txs/mgas sec  8/25 peers
+```
+
+This example shows the local node has downloaded and synced blocks `#151305 of  #6031258`. Simply allow the node to sync. This process can take hours. When the local node has reach the current block height, it will continue to import new blocks.
+
+Closing geth will stop the local node and starting the node will continue to sync where it left off.
