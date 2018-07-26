@@ -52,3 +52,5 @@ Turn file beat on. Pointing to .yml config file.
 ```
 filebeat -e -path.config=. -c /Users/stev/Documents/GitHub/how-to-ethereum-classic/how-to-elk-stack/config-files/filebeat.geth.mlog.json.yml -d "publish"
 ```
+
+logstash -f /Users/stev/Documents/GitHub/how-to-ethereum-classic/how-to-elk-stack/config-files/ls-pipeline-json.conf --config.reload.automatic
