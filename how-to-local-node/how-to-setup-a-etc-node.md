@@ -1,5 +1,6 @@
 # How to Setup an Ethereum Classic Node | macOS
 ![node](https://hype.codes/sites/default/files/photoarchive/screenshots/etc.png)
+![node](https://seeklogo.com/images/A/apple-mac-logo-FB34556F8D-seeklogo.com.png)
 
 < input summary >
 
