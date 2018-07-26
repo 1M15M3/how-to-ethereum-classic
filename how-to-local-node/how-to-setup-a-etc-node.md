@@ -1,6 +1,6 @@
 # How to Setup an Ethereum Classic Node | macOS
 
-**Prerequisites**
+# Prerequisites
 
 *Double check project websites for latest installation instructions*
 
