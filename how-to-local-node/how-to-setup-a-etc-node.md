@@ -1,3 +1,12 @@
+>>> from markdown import Markdown
+>>> from fontawesome_markdown import FontAwesomeExtension
+
+>>> markdown = Markdown(extensions=[FontAwesomeExtension()]
+>>> markdown.convert('i ♥ :fa-coffee:')
+
+
+<p>i ♥ <i class="fa fa-coffee"></i></p>
+
 # How to Setup an Ethereum Classic Node | macOS
 ![node](https://hype.codes/sites/default/files/photoarchive/screenshots/etc.png)
 ![node](https://seeklogo.com/images/A/apple-mac-logo-FB34556F8D-seeklogo.com.png)
