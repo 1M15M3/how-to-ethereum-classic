@@ -2,9 +2,21 @@
 
 ![etcnode icon](https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/37861558_253984231873696_3855588271853666304_n.png?_nc_cat=0&oh=dd32597e88b8ee46b36c7cf59c33e790&oe=5BCE499A)
 
-*Classic* `Geth` is the command line interface for running a full Ethereum based node in Go.
+`Geth` is the command line interface for running a full Ethereum based node in Go. By running a full node, you take part in the network.
 
-By installing and running a full Ethererum Classic node.
+**Capabilities of running a full node:**
+- mine ether (particularly effective to mine testnet Ether)
+- manage accounts and funds
+- create contracts and transactions
+- explore block history
+- and more.
+
+**Why run a full node:**
+- third party nodes (light nodes, remote nodes, etc...) are usually reliable, but have high traffic as well as controlled by a third party. Using a personal node ensures more user control and oversight of performing functions with the network.
+-  more independent nodes on the network ensures the security and resiliency of the network.
+- more nodes reduce the latency of the network.
+- developers can use a personal node for various dApp functions
+- support the blockchain revolution!
 
 # Prerequisites
 
