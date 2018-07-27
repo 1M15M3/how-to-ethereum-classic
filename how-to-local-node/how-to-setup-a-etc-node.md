@@ -1,6 +1,6 @@
 # How to Setup an Ethereum Classic Node | macOS
 
-![etcnode icon](etcnode.png)
+![etcnode icon](https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/37861558_253984231873696_3855588271853666304_n.png?_nc_cat=0&oh=dd32597e88b8ee46b36c7cf59c33e790&oe=5BCE499A)
 
 < input summary >
 
