@@ -12,10 +12,10 @@
 - and more.
 
 **Why run a full node:**
-- third party nodes (light nodes, remote nodes, etc...) are usually reliable, but have high traffic as well as controlled by a third party. Using a personal node ensures more user control and oversight of performing functions with the network.
+- third party nodes (light nodes, remote nodes, etc...) are usually reliable, but have high traffic and controlled by a third party. Using a personal node ensures more user control and oversight of performed functions with the network.
 -  more independent nodes on the network ensures the security and resiliency of the network.
 - more nodes reduce the latency of the network.
-- developers can use a personal node for various dApp functions
+- developers can use a personal node for various dApp tasks
 - support the blockchain revolution!
 
 # Prerequisites
@@ -120,12 +120,52 @@ Running Classic Geth downloads and syncs the entire Ethereum Classic blockchain.
 2018-07-25 22:51:36 Sync       #151305 of  #6031258 36529b08   638/ 517/12 blk/txs/mgas sec  8/25 peers
 ```
 
-This example shows the local node has downloaded and synced blocks `#151305 of  #6031258`. Simply allow the node to sync. This process can take hours. When the local node has reach the current block height, it will continue to import new blocks.
-
-Closing geth will stop the local node and starting the node will continue to sync where it left off.
+This example shows the local node has downloaded and synced blocks `#151305 of  #6031258`. Simply allow the node to sync. This process can take hours. When the local node has reach the current block height, it will continue to import new blocks. Closing Geth will stop the instance of the Ethereum Classic blockchain. Running Geth again, will continue to sync the blockchain from the last instance of the node to the current blockchain and so on.
 
 # Commands & Flags
 
 While geth is running, open a new terminal and view list of commands and flags.
 
 `$ geth -h`, `$ geth help`, `$ geth -help`
+
+# Using Geth - Basics
+
+**Default Data Directory**
+
+`$HOME/Library/EthereumClassic/`
+
+Overview of the file structure
+
+```
+$ cd ./Library/EthereumClassic/mainnet/
+$ ls
+chaindata	geth.ipc	log		nodekey
+dapp		keystore	mlogs		nodes
+```
+`chaindata` - the Ethereum Classic database `keystore` - keystore files for accounts created in geth
+
+## Accounts
+
+**Import Account**
+
+Import an existing ETC account using a keystore file or existing private key. Private keys can be saved in a .txt or .csv file.
+
+```
+$ geth account import < KEYSTORE FILE OR PRIVATE_KEY.txt >
+```
+
+The account will be imported and a keystore file will be generated at `./Library/EthereumClassic/mainnet/keystore`. Always backup keystore files and private keys incase of the event to recover an account.
+
+**Create Account**
+
+Create a new ETC account.
+
+```
+$ geth account new
+```
+
+**List Accounts**
+
+```
+$ geth account list
+```
