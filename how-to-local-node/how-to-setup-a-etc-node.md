@@ -148,10 +148,12 @@ dapp		keystore	mlogs		nodes
 
 **Import Account**
 
-Import an existing ETC account using a keystore file or existing private key. Private keys can be saved in a .txt or .csv file.
+Import an existing ETC account using a keystore file or existing private key. Private keys can be saved in a .txt or .csv file, then pointed to for import.
 
 ```
 $ geth account import < KEYSTORE FILE OR PRIVATE_KEY.txt >
+// Another example, assume "Stev" saved his keystore or private key in Downloads directory
+$ geth account import /Users/stev/Downloads/privatekey.txt
 ```
 
 The account will be imported and a keystore file will be generated at `./Library/EthereumClassic/mainnet/keystore`. Always backup keystore files and private keys incase of the event to recover an account.
