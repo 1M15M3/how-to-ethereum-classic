@@ -3,7 +3,8 @@
 `Geth` is the command line interface for running a full Ethereum based node in Go. By running a full node, you take part in the network.
 
 If you're running Geth you're likely to see a matrix of console logs and other lines of information. Something like this:
-![matrix](https://media.giphy.com/media/rWY9ySfjytitq/giphy.gif)
+
+![matrix](https://media.giphy.com/media/10c4J4OAqSBzag/giphy.gif)
 
 # Prerequisites
 
