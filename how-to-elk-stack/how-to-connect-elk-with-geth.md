@@ -1,7 +1,9 @@
 # How to Connect ELK Stack with Geth
 
-< input banner or preview image >
-< input summary >
+`Geth` is the command line interface for running a full Ethereum based node in Go. By running a full node, you take part in the network.
+
+If you're running Geth you're likely to see a matrix of console logs and other lines of information. Something like this:
+![matrix](https://media.giphy.com/media/rWY9ySfjytitq/giphy.gif)
 
 # Prerequisites
 
@@ -109,7 +111,7 @@ filebeat -e -path.config=. -c /usr/local/Cellar/filebeat/6.2.4/.bottle/etc/fileb
 
 
 
-
+filebeat -e -path.config=. -c /Users/stev/Documents/GitHub/how-to-ethereum-classic/how-to-elk-stack/config-files/filebeat.geth.mlog.json.yml -d "publish"
 
 
 
