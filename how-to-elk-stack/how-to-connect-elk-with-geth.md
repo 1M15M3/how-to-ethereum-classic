@@ -1,10 +1,38 @@
-# How to Connect ELK Stack with Geth
+# ETC Node Monitoring with ELK Stack
 
-`Geth` is the command line interface for running a full Ethereum based node in Go. By running a full node, you take part in the network.
+`Classic Geth` is the command line interface for running a full Ethereum Classic node in Go. By running a full node, you take part in the network.
 
-If you're running Geth you're likely to see a matrix of console logs and other lines of information. Something like this:
+Developers can enable simple status outputs in Geth to learn more about their nodes with
+
+```
+$ geth --log-status="sync=20" --verbosity 1
+```
+
+This would enable Geth to print status logs every 20 seconds (`--log-status="sync=20"`) and reduce normal event reporting to show errors only(`--verbosity 1`).
+
+![consolelogs](https://github.com/ETCDEVTeam/geth-ELK/blob/master/tutorial-images/geth_console_log_status.png?raw=true)
+
+These logs help developers debug, trace, and keep track of chain events, however, micro level information and thousands of lines flying across the console is not an ideal experience for some. Not everyone wants to skim through console logs or calculate data manually.
 
 ![matrix](https://media.giphy.com/media/10c4J4OAqSBzag/giphy.gif)
+
+Geth has a *machine log* , [mlog API](https://github.com/ethereumproject/go-ethereum/wiki/mlog-API), which are structured logs that machines can read and readily analyze. This allows the opportunity to use tools to read and present Geth's mlog data more effectively. One of those tools in particular is the **ELK Stack** provided by [Elastic](http://elastic.co).
+
+
+A node administrator or developer can utilize the ELK Stack + Geth mlogs to present Geth's data to something like this:
+
+
+
+![blockchain&sync](https://github.com/ETCDEVTeam/geth-ELK/raw/master/tutorial-images/dash_sync.png)*Blockchain & Sync*
+
+
+
+![network*peers](https://github.com/ETCDEVTeam/geth-ELK/raw/master/tutorial-images/dash_p2p.png)*Network & Peers*
+
+
+
+![miners&mining](https://github.com/ETCDEVTeam/geth-ELK/raw/master/tutorial-images/dash_mining.png)*Miners & Mining*
+
 
 # Prerequisites
 
